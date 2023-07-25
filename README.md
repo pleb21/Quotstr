@@ -4,6 +4,10 @@
 
 `pip install nostr`
 
+run using `python main.py`
+
+requires you to have a `random_quotes.txt` file with a quote on each line
+
 uses the python nostr library by [jeffthibault](https://github.com/jeffthibault/python-nostr)
 
 - reads lines from a local file `random_quotes.txt` downloaded from [erossignon](https://github.com/erossignon/qod4outlook/blob/master/quotes.txt)
