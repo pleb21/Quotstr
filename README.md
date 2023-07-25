@@ -1,10 +1,14 @@
 # A script to publish Nostr notes, from a local file
 
 ## install
+1. `git clone git@github.com:pleb21/Quotstr.git`
+2. `cd Quotstr`
+3. create a virtual environment, as it keeps things a little cleaner. I like to keep it that way. Depending upon your os and python version, it may vary, try `python3 -m venv venv` or best would be to do a google search `"how to install virtual environment on <your OS>"`
+4. activate virtual environment; again varies between python versions and OS; on Linux/mac, do `source venv/bin/activate`
+5. `pip install nostr` or `pip install -r requirements.txt`
+6. run using `python main.py`
 
-`pip install nostr`
-
-run using `python main.py`
+(apologies for the detailed yet broken instructions - I assume the world is as clumsy as me)
 
 requires you to have a `random_quotes.txt` file with a quote on each line
 
