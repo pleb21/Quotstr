@@ -24,5 +24,5 @@ It should get better from here - if you have some suggestions/advice, I'm all ea
 
 ### Questions
 
-- I don't understand how I could access the same 'user' again. I understand that I can save the private key(`private_key.bech32()`) but how do I save the instance of `PrivateKey()` (stored as `private_key` in this script), in other words, how do I perform, for eg., `private_key.sign_event()` at a later stage. Does storing the `nsec...` enable me with that? Yeah, that's what happens when one hasn't put in the time - would need to read up more to understand better.
+- I don't understand how I could access the same 'user' again. I understand that I can save the private key(`private_key.bech32()`) but how do I save the instance of `PrivateKey()` (stored as `private_key` in this script), in other words, how do I perform, for eg., `private_key.sign_event()` at a later stage. Does storing the `nsec...` enable me with that? Yeah, that's what happens when one hasn't put in the time - would need to read up more to understand better. __got the answer to this - like I said, need to put in time - while my question may not have been clear, the answer to it is that one can retrieve it using `from_nsec` method, like so: `private_key = PrivateKey.from_nsec('nseck3yg035h3r3')`__
 - dumber questions to follow...
