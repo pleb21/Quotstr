@@ -11,11 +11,11 @@ pub_hex = private_key.public_key.hex()
 
 # connecting to relays
 relay_manager = RelayManager()
-relay_manager.add_relay("wss://nostr-pub.wellorder.net")
-relay_manager.add_relay("wss://relay.damus.io")
-relay_manager.add_relay("wss://relay.snort.social")
-relay_manager.add_relay("wss://nostr.wine/")
-relay_manager.add_relay("wss://nos.lol/")
+relay_list = ["wss://nostr-pub.wellorder.net", "wss://relay.damus.io", "wss://relay.snort.social", 
+              "wss://nostr.bitcoiner.social", "wss://offchain.pub", "wss://nostr.wine/", 
+              "wss://nos.lol/"]
+for item in relay_list:
+  relay_manager.add_relay(item)
 
 # the URL for viewing notes
 pub_bech = private_key.public_key.bech32()
